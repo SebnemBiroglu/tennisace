@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Session | Tennis ACE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body class="bg-[#F0F3E7] font-['Poppins'] min-h-screen">
+    <nav class="bg-white px-[5%] py-4 flex justify-between items-center shadow-sm sticky top-0 z-50">
+        <div class="flex items-center gap-3">
+            <a href="index.html" class="nav-logo">
+                <img src="src/assets/Frame 3.svg" alt="Tennis Ace Logo" class="w-10"> 
+            </a>
+            <span class="text-xl font-light tracking-tight">Tennis Ace</span></span> 
+        </div>
+        <ul class="flex gap-8 text-sm font-medium text-gray-600">
+            <li><a href="index.html" class="hover:text-[#196180] transition">Home</a></li>
+            <li><a href="classes.html" class="hover:text-[#196180] transition">Classes</a></li>
+            <li><a href="booking.html" class="text-[#196180] font-semibold underline underline-offset-8">Book Now</a></li>
+        </ul>
+    </nav>
+
+    <header class="booking-header py-10">
+        <h2 class="text-center">Book Your Session</h2>
+        <p class="text-center py-5">Select your preferences below to secure your spot on the court.</p>
+    </header>
+
+    <section>
+        <div class="booking-container max-w-3xl mx-auto">
+            <form action="#" class="booking-form">
+                
+                <div class="form-section">
+                    <h4>Personal Information</h4>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" id="full-name" placeholder="Full Name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="email@test.com" required>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="(555) 000-0000"
+                            class=" px-4 py-1  placeholder:text-sm"
+                             required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h4>Class Details</h4>
+                    <p class="label-text text-sm font-medium mb-2">Class Type</p>
+                    <div class="toggle-group">
+                        <input type="radio" name="class-type" id="private" checked>
+                        <label for="private">Private</label>
+                        <input type="radio" name="class-type" id="group">
+                        <label for="group">Group</label>
+                        <input type="radio" name="class-type" id="kids">
+                        <label for="kids">Kids Class</label>
+                    </div>
+
+                    <p class="label-text text-sm font-medium mb-2">Skill Level</p>
+                    <div class="toggle-group">
+                        <input type="radio" name="skill" id="beginner" checked>
+                        <label for="beginner">Beginner</label>
+                        <input type="radio" name="skill" id="intermediate">
+                        <label for="intermediate">Intermediate</label>
+                        <input type="radio" name="skill" id="advanced">
+                        <label for="advanced">Advanced</label>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <div class="input-group mb-6">
+                        <label for="coach">Coach Preference</label>
+                        <select id="coach">
+                            <option>No Preference</option>
+                            <option>Coach Alex</option>
+                            <option>Coach Sarah</option>
+                        </select>
+                    </div>
+                    
+                    <h4>Preferred Schedule</h4> 
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="booking-date">Preferred Date</label>
+                            <input type="date" id="booking-date" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="booking-time">Preferred Time</label>
+                            <input type="time" id="booking-time" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <div class="input-group">
+                        <label for="notes">Additional Notes</label>
+                        <textarea id="notes" placeholder="Anything else we should know?"></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="booknow-button">Confirm Now</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-[#D3D7B7] text-black py-16 px-[5%]">
+        <div class="max-w-6xl mx-auto flex flex-wrap justify-between gap-12">
+            <div class="max-w-xs space-y-4">
+                <div class="flex items-center gap-3">
+                    <img src="src/assets/Frame 3.svg" alt="Logo">
+                    <span class="text-xl font-light">Tennis Ace</span>
+                </div>
+                <p class="text-black-100 font-light text-sm">Premium coaching and court rentals in Waterfront, NJ.</p>
+            </div>
+            <div class="space-y-4">
+                <h4 class="font-semibold">Contact Us</h4>
+                <ul class="text-black-100 font-light text-sm space-y-1">
+                    <li>Waterfront, New Jersey</li>
+                    <li>hello@tennisace.com</li>
+                    <li>(555) 123-1212</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
