@@ -23,10 +23,7 @@
         </ul>
     </nav>
 
-    <header class="booking-header py-10">
-        <h2 class="text-center">Book Your Session</h2>
-        <p class="text-center py-5">Select your preferences below to secure your spot on the court.</p>
-    </header>
+    <img src="src/assets/Group4.png" alt="Group Image" class="w-full h-auto"> 
 
     <section>
         <div class="booking-container max-w-3xl mx-auto">
@@ -55,27 +52,36 @@
                 </div>
 
                 <div class="form-section">
-                    <h4>Class Details</h4>
-                    <p class="label-text text-sm font-medium mb-2">Class Type</p>
-                    <div class="toggle-group">
-                        <input type="radio" name="class-type" id="private" checked>
-                        <label for="private">Private</label>
-                        <input type="radio" name="class-type" id="group">
-                        <label for="group">Group</label>
-                        <input type="radio" name="class-type" id="kids">
-                        <label for="kids">Kids Class</label>
-                    </div>
+    <h4 class="mb-4">Class Details</h4>
+    
+    <div class="flex flex-wrap gap-8">
+        
+        <div class="flex-1 min-w-[250px]">
+            <p class="label-text text-sm font-medium mb-2">Class Type</p>
+            <div class="toggle-group">
+                <input type="radio" name="class-type" id="private" checked>
+                <label for="private">Private</label>
+                <input type="radio" name="class-type" id="group">
+                <label for="group">Group</label>
+                <input type="radio" name="class-type" id="kids">
+                <label for="kids">Kids Class</label>
+            </div>
+        </div>
 
-                    <p class="label-text text-sm font-medium mb-2">Skill Level</p>
-                    <div class="toggle-group">
-                        <input type="radio" name="skill" id="beginner" checked>
-                        <label for="beginner">Beginner</label>
-                        <input type="radio" name="skill" id="intermediate">
-                        <label for="intermediate">Intermediate</label>
-                        <input type="radio" name="skill" id="advanced">
-                        <label for="advanced">Advanced</label>
-                    </div>
-                </div>
+        <div class="flex-1 min-w-[250px]">
+            <p class="label-text text-sm font-medium mb-2">Skill Level</p>
+            <div class="toggle-group">
+                <input type="radio" name="skill" id="beginner" checked>
+                <label for="beginner">Beginner</label>
+                <input type="radio" name="skill" id="intermediate">
+                <label for="intermediate">Intermediate</label>
+                <input type="radio" name="skill" id="advanced">
+                <label for="advanced">Advanced</label>
+            </div>
+        </div>
+        
+    </div>
+</div>
 
                 <div class="form-section">
                     <div class="input-group mb-6">
